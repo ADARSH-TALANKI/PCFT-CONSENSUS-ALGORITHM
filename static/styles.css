@@ -1,0 +1,14 @@
+body { font-family: system-ui, sans-serif; margin: 24px; color: #111; }
+header { margin-bottom: 16px; }
+.panel { border: 1px solid #ddd; border-radius: 12px; padding: 16px; margin: 12px 0; }
+.row { display: flex; gap: 12px; align-items: center; margin: 8px 0; }
+input, select, button { padding: 8px 10px; border-radius: 8px; border: 1px solid #bbb; }
+button { cursor: pointer; }
+pre { background: #0b1020; color: #d2eaff; padding: 12px; border-radius: 10px; max-height: 300px; overflow: auto; }
+#logs { background: #0c0f14; }
+.badge { padding: 4px 8px; border-radius: 8px; }
+.alive { background: #e6ffed; border: 1px solid #a4e2b1; }
+.dead { background: #ffecec; border: 1px solid #f0a8a8; }
+.node { display: inline-flex; align-items: center; gap: 8px; margin: 4px; padding: 6px 10px; border: 1px solid #ddd; border-radius: 8px; }
+.primary { border-color: #6aa6ff; background: #eef5ff; }
+small { color: #666; }

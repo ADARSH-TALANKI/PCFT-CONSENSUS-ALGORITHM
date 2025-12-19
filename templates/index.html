@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>P-CFT Demo</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header>
+  <h1>P-CFT (Privacy + Crash Fault Tolerance) — Live Demo</h1>
+  <p>Phases: <b>SETUP → REQUEST → FORWARD → VERIFY → FINISH</b></p>
+</header>
+
+<section class="panel">
+  <h2>Submit Transaction</h2>
+  <div class="row">
+    <label>Client</label>
+    <select id="clientSelect"></select>
+  </div>
+  <div class="row">
+    <label>Message</label>
+    <input id="messageInput" placeholder="Alice -> Pay 5 to Bob"/>
+  </div>
+  <button id="sendBtn">Send Tx</button>
+</section>
+
+<section class="panel">
+  <h2>Nodes</h2>
+  <div id="nodeInfo"></div>
+</section>
+
+<section class="panel">
+  <h2>Chain</h2>
+  <div class="row">
+    <button id="refreshChain">Refresh</button>
+    <button id="forceCommit">Force Commit</button>
+  </div>
+  <pre id="chainView"></pre>
+</section>
+
+<section class="panel">
+  <h2>Live Logs</h2>
+  <pre id="logs"></pre>
+</section>
+
+<section class="panel">
+  <h2>Manage Clients</h2>
+  <div class="row">
+    <input id="newClientId" placeholder="new-client-id"/>
+    <button id="addClientBtn">Add Client</button>
+  </div>
+</section>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
